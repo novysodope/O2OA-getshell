@@ -1,0 +1,35 @@
+{
+  "name": "CacheAction",
+  "className": "com.x.base.core.project.jaxrs.cache.CacheAction",
+  "description": "缓存操作",
+  "methods": [
+    {
+      "name": "configFlush",
+      "className": "com.x.base.core.project.jaxrs.cache.ActionConfigFlush",
+      "description": "接收config flush 信号.",
+      "type": "GET",
+      "outs": [
+        {
+          "name": "value",
+          "type": "Boolean",
+          "isCollection": false,
+          "description": "布尔值."
+        }
+      ]
+    },
+    {
+      "name": "receive",
+      "className": "com.x.base.core.project.jaxrs.cache.ActionReceive",
+      "description": "接收Cache刷新信息.",
+      "type": "PUT",
+      "outs": [
+        {
+          "name": "value",
+          "type": "String",
+          "isCollection": false,
+          "description": "字符串值"
+        }
+      ]
+    }
+  ]
+}
